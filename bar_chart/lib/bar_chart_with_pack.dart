@@ -29,9 +29,9 @@ class _BarChartWithPackState extends State<BarChartWithPack> {
                   BarChartData(
                     alignment: BarChartAlignment.center,
                     groupsSpace: 50,
-                    barTouchData: BarTouchData(
-                      enabled: true,
-                    ),
+                    barTouchData: BarTouchData(touchCallback: (value) {
+                      print("object");
+                    }),
                     titlesData: FlTitlesData(
                       show: true,
                       bottomTitles: SideTitles(
@@ -141,14 +141,14 @@ class _BarChartWithPackState extends State<BarChartWithPack> {
             borderRadius: const BorderRadius.all(Radius.circular(4)),
           ),
           BarChartRodData(
-            y: 1625,
-            rodStackItems: [BarChartRodStackItem(0, 1625, Color(0xffF6B2A8))],
+            y: 1300,
+            rodStackItems: [BarChartRodStackItem(0, 1300, Color(0xffF6B2A8))],
             colors: [Colors.transparent],
             borderRadius: const BorderRadius.all(Radius.circular(4)),
           ),
           BarChartRodData(
-            y: 1550,
-            rodStackItems: [BarChartRodStackItem(0, 1550, Color(0xffEB7743))],
+            y: 750,
+            rodStackItems: [BarChartRodStackItem(0, 750, Color(0xffEB7743))],
             colors: [Colors.transparent],
             borderRadius: const BorderRadius.all(Radius.circular(4)),
           ),
